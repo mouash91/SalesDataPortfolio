@@ -1,5 +1,8 @@
-/* Superstore Sales Performance and Trend Analysis */
 
+**Superstore Sales Performance and Trend Analysis **
+
+
+```sql
 /* Price per item and parse out year and month */
 SELECT 
 	[Order Date] AS OrderDate,
@@ -19,8 +22,9 @@ SELECT
 	CAST(CAST(Sales AS decimal(10, 2)) / Quantity AS decimal(10, 2)) AS PricePerItem,
 	Profit 
 FROM Sales;
+```
 
-
+```sql
 /* Total Sales by year, sales difference between years, and year-over-year growth */
 
 WITH CTE AS (
@@ -42,8 +46,9 @@ FROM
     CTE
 ORDER BY
     Year DESC;
+```
 
-
+```sql
 /* Sales total per month */
 
 WITH CTE AS (
@@ -64,7 +69,9 @@ GROUP BY
     Year, Month
 ORDER BY
     Year DESC;
+```
 
+```sql
 /* Total Sales per category with rank */
 
 SELECT
@@ -76,8 +83,9 @@ FROM
     Sales
 GROUP BY
     Category;
+```
 
-
+```sql
 /* Total Sales per sub-category with rank */
 
 SELECT
@@ -91,7 +99,9 @@ GROUP BY
     Category, [Sub-Category]
 ORDER BY
     Category;
+```
 
+```sql
 /* Total sales per region with rank */
 
 SELECT 
@@ -101,7 +111,9 @@ SELECT
 FROM Sales
 GROUP BY
 	Region;
+```
 
+```sql
 /* Total sales per region and state */
 
 SELECT
@@ -112,7 +124,9 @@ GROUP BY
 	Region, State
 ORDER BY
 	Region;
+```
 
+```sql
 /* Total sales of each category within each region with ranks */
 
 SELECT
@@ -133,3 +147,4 @@ FROM
     ) AS subquery
 ORDER BY
     Region, TotalSales DESC;
+```
