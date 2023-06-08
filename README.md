@@ -1,5 +1,7 @@
-# Superstore Sales Performance and Trend Analysis
-This SQL query provides a comprehensive analysis of the sales performance and trends in the Superstore dataset. The query retrieves various metrics and rankings to help understand the sales patterns and identify areas of growth and opportunity. Let's break down each section of the query:
+### Superstore Sales Performance and Trend Analysis 
+This repository contains a set of SQL queries designed to analyze the sales performance and trends in a superstore dataset. The queries cover various aspects such as price per item, total sales by year and month, category-wise and sub-category-wise sales with ranks, sales per region and state, and more. These queries provide valuable insights into the sales data and can be used for business analysis and decision-making.
+
+### Queries
 
 **Price per item and parse out year and month**
 
@@ -33,4 +35,15 @@ This section provides the total sales for each combination of region and state. 
 
 The final part of the query calculates the total sales for each category within each region. It assigns a rank to each category based on the sales amount within its respective region.
 
-Overall, this SQL query offers a comprehensive analysis of sales performance and trends, providing insights into the Superstore dataset. It can be useful for identifying top-performing categories, sub-categories, regions, and states, as well as tracking year-over-year growth and monthly sales patterns.
+**Skills Used**
+
+The SQL queries in this repository demonstrate the utilization of various SQL skills and techniques, including:
+
+- SELECT statement: Retrieves specific columns from tables.
+- WITH statement (Common Table Expressions): Defines temporary result sets for complex queries.
+- Aggregate functions: Calculates the sum of sales, quantity, and other metrics.
+- Window functions (LAG, RANK, PARTITION BY): Performs calculations and ranking based on specific criteria.
+- Conversion functions (YEAR, FORMAT, CONCAT, CAST): Extracts year, month, and other values from dates and converts data types.
+- GROUP BY statement: Groups data based on specified columns for aggregations.
+- ORDER BY statement: Sorts the results based on specific columns and order.
+- These skills are crucial for analyzing sales performance and trends, making comparisons, and ranking the data to gain valuable insights.
