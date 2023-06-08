@@ -5,6 +5,7 @@ This SQL query provides a comprehensive analysis of the sales performance and tr
 This part of the query extracts the relevant columns from the Sales table and calculates the price per item by dividing the sales amount by the quantity. It also extracts the year and month from the Order Date column for further analysis.
 
 **Total Sales by year, sales difference between years, and year-over-year growth**
+
 Using a common table expression (CTE), this section calculates the total sales for each year in the dataset. It also calculates the sales difference between the current year and the previous year and calculates the year-over-year growth percentage.
 
 **Sales total per month**
